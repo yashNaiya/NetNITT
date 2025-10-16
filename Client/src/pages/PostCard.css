@@ -1,0 +1,184 @@
+.post-card {
+  background-color: #ffffff;
+  border: 1px solid #e3e7e7;
+  border-radius: 8px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.post-title {
+  color: #1e1e2f;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.post-role {
+  background-color: #2f5d62;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+.post-body {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.post-desc {
+  color: #333;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.post-meta p {
+  margin: 3px 0;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 0.8rem;
+}
+
+.post-user {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.user-avatar {
+  background-color: #00bfa6;
+  color: white;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.user-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e1e2f;
+  margin: 0;
+}
+
+.user-meta {
+  font-size: 0.75rem;
+  color: #666;
+  margin: 0;
+}
+
+.interest-btn {
+  background-color: #2f5d62;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.interest-btn:hover {
+  background-color: #244c4f;
+}
+
+.interest-btn {
+  background-color: #2f5d62;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.interest-btn:hover {
+  background-color: #00bfa6;
+}
+
+.interest-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.interest-btn.interested {
+  background-color: #aaa;
+  color: #222;
+}
+
+/* Smooth fade-out animation when user shows interest */
+.fade-out {
+  opacity: 0;
+  transform: scale(1.6);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Optional pulse when clicked */
+.interest-btn:active {
+  transform: scale(1.6);
+}
+
+/* Show interest button styling (matches your dashboard theme) */
+.interest-btn {
+  background-color: #2f5d62;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.interest-btn:hover {
+  background-color: #00bfa6;
+}
+
+.interest-btn.interested {
+  background-color: #bfbfbf;
+  color: #222;
+  cursor: default;
+  pointer-events: none;
+}
+
+.post-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}

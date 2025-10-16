@@ -1,0 +1,135 @@
+/* === Post Form Styling === */
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 550px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  font-family: "Inter", system-ui, sans-serif;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.post-form h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2f5d62;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Inputs and textarea */
+.post-form input,
+.post-form textarea {
+  width: 100%;
+  font-size: 0.95rem;
+  padding: 0.85rem 1rem;
+  border: 1.5px solid #e0e4e7;
+  border-radius: 12px;
+  background: #fafafa;
+  transition: all 0.25s ease;
+  font-family: inherit;
+}
+
+.post-form input:focus,
+.post-form textarea:focus {
+  outline: none;
+  border-color: #2f5d62;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(47, 93, 98, 0.1);
+}
+
+.post-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Button */
+.post-form button {
+  background: #2f5d62;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 1.2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.post-form button:hover {
+  background: #244a4e;
+  transform: translateY(-1px);
+}
+
+.post-form button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Overlay and Modal (used in Feed.jsx popup) === */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal {
+  position: relative;
+  background: #fff;
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  max-width: 600px;
+  width: 95%;
+  animation: popIn 0.3s ease-out;
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Close button (X) */
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.close-modal:hover {
+  color: #2f5d62;
+  transform: rotate(90deg);
+}

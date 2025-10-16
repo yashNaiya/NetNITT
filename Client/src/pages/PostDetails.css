@@ -1,0 +1,192 @@
+.postdetails-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #f7f9fb;
+  min-height: 100vh;
+  padding: 30px 80px;
+}
+
+/* --- Card Layout --- */
+.postdetails-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.postdetails-header h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.meta-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+/* --- Badges --- */
+.badge {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+.badge-need {
+  background: #fff7d6;
+  color: #a87a00;
+}
+
+.badge-offer {
+  background: #d6f7df;
+  color: #1b7428;
+}
+
+.badge-type {
+  background: #eaeef3;
+  color: #333;
+}
+
+.muted {
+  color: #777;
+  font-size: 0.85rem;
+}
+
+.description {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.postdetails-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+.back-btn {
+  padding: 8px 16px;
+  background: #eceff1;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+.back-btn:hover {
+  background: #dee3e6;
+}
+
+/* --- Interested Users --- */
+.interest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.interest-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fafbfc;
+  border-radius: 10px;
+  padding: 12px 16px;
+  transition: all 0.2s ease;
+}
+.interest-item:hover {
+  background: #f1f3f5;
+}
+
+.interest-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #007bff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.interest-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-accept,
+.btn-reject {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-accept {
+  background: #2e7d32;
+  color: white;
+}
+.btn-accept:hover {
+  background: #256627;
+}
+
+.btn-reject {
+  background: #c62828;
+  color: white;
+}
+.btn-reject:hover {
+  background: #a32020;
+}
+
+/* --- Empty State --- */
+.empty {
+  text-align: center;
+  color: #777;
+  padding: 16px 0;
+}
+
+/* --- Loading --- */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  color: #444;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid #ccc;
+  border-top-color: #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
